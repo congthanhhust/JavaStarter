@@ -1,7 +1,5 @@
 package collections;
 
-import javax.print.DocFlavor;
-
 public class Student {
     private String name;
     private int id;
@@ -22,5 +20,14 @@ public class Student {
 
     public void setMathScope(int mathScope){
         this.mathScope = mathScope;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", mathScope=" + mathScope +
+                '}';
     }
 }
